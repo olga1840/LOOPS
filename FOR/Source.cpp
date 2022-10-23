@@ -1,4 +1,4 @@
-#include<iostream>
+Ôªø#include<iostream>
 using namespace std;
 //#define FOR_BASICS
 //#define FACTORIAL
@@ -9,12 +9,12 @@ using namespace std;
 #define SIMPLE
 
 void main()
-{
+{                                        
 	setlocale(LC_ALL, "Russian");
 
 #ifdef FOR_BASICS
 	int n;
-	cout << "¬‚Â‰ËÚÂ ÍÓÎË˜ÂÒÚ‚Ó ËÚÂ‡ˆËÈ: "; cin >> n;
+	cout << "–í–≤–µ–¥–∏—Ç–µ –∫–æ–ª–∏—á–µ—Å—Ç–≤–æ –∏—Ç–µ—Ä–∞—Ü–∏–π: "; cin >> n;
 	for (int i=0; i<n; i++)
 	{
 		cout << i << "\t";
@@ -25,7 +25,7 @@ void main()
 #ifdef FACTORIAL
 	int n;
 	int f =1;   //Factorial
-	cout << "¬‚Â‰ËÚÂ ˜ËÒÎÓ: "; cin >> n;
+	cout << "–í–≤–µ–¥–∏—Ç–µ —á–∏—Å–ª–æ: "; cin >> n;
 	for (int i = 1; i <= n; i++)
 	{
 		cout << i << "! = ";
@@ -38,11 +38,11 @@ void main()
 #endif //FACTORIAL
 
 #ifdef STEPEN
-	double a; //ŒÒÌÓ‚‡ÌËÂ ÒÚÂÔÂÌË, ÍÓÚÓÓÂ ÛÏÌÓÊ‡ÂÚÒˇ Ò‡ÏÓ Ì‡ ÒÂ·ˇ
-	int n; // œÓÍ‡Á‡ÚÂÎ¸ ÒÚÂÔÂÌË
-	double N = 1; //—ÚÂÔÂÌ¸
-	cout << "¬‚Â‰ËÚÂ ÓÒÌÓ‚‡ÌËÂ ÒÚÂÔÂÌË: "; cin >> a;
-	cout << "¬‚Â‰ËÚÂ ÔÓÍ‡Á‡ÚÂÎ¸ ÒÚÂÔÂÌË: "; cin >> n;
+	double a; //–û—Å–Ω–æ–≤–∞–Ω–∏–µ —Å—Ç–µ–ø–µ–Ω–∏, –∫–æ—Ç–æ—Ä–æ–µ —É–º–Ω–æ–∂–∞–µ—Ç—Å—è —Å–∞–º–æ –Ω–∞ —Å–µ–±—è
+	int n; // –ü–æ–∫–∞–∑–∞—Ç–µ–ª—å —Å—Ç–µ–ø–µ–Ω–∏
+	double N = 1; //–°—Ç–µ–ø–µ–Ω—å
+	cout << "–í–≤–µ–¥–∏—Ç–µ –æ—Å–Ω–æ–≤–∞–Ω–∏–µ —Å—Ç–µ–ø–µ–Ω–∏: "; cin >> a;
+	cout << "–í–≤–µ–¥–∏—Ç–µ –ø–æ–∫–∞–∑–∞—Ç–µ–ª—å —Å—Ç–µ–ø–µ–Ω–∏: "; cin >> n;
 	if (n < 0)
 	{
 		a = 1 / a;
@@ -58,8 +58,8 @@ void main()
 #endif //STEPEN
 
 #ifdef ASCII
-	cout << "“‡·ÎËˆ‡ ASCII-ÒËÏ‚ÓÎÓ‚:\n";
-	setlocale(LC_ALL, "C"); //¬ÍÎ˛˜‡ÂÏ ÍÓ‰ËÓ‚ÍÛ ÔÓ ÛÏÓÎ˜‡ÌË˛
+	cout << "–¢–∞–±–ª–∏—Ü–∞ ASCII-—Å–∏–º–≤–æ–ª–æ–≤:\n";
+	setlocale(LC_ALL, "C"); //–í–∫–ª—é—á–∞–µ–º –∫–æ–¥–∏—Ä–æ–≤–∫—É –ø–æ —É–º–æ–ª—á–∞–Ω–∏—é
 	for (int i = 0; i < 256; i++)
 	{
 		if (i % 16 == 0)cout << endl;
@@ -67,13 +67,13 @@ void main()
 	}
 	cout << endl;
 	setlocale(LC_ALL, "");
-	cout << "¬ÓÚ Ë ÒÍ‡ÁÓ˜ÍÂ ÍÓÌÂˆ" << endl;
+	cout << "–í–æ—Ç –∏ —Å–∫–∞–∑–æ—á–∫–µ –∫–æ–Ω–µ—Ü" << endl;
 
 #endif //ASCII
 
 #ifdef FIBONACCI_1
 	int n;
-	cout << "¬‚Â‰ËÚÂ ÔÂ‰ÂÎ¸ÌÓÂ ˜ËÒÎÓ: "; cin >> n;
+	cout << "–í–≤–µ–¥–∏—Ç–µ –ø—Ä–µ–¥–µ–ª—å–Ω–æ–µ —á–∏—Å–ª–æ: "; cin >> n;
 	for (int a = 0, b = 1, c = a + b; a < n; a = b, b = c, c = a + b)
 	{
 		cout << a << "\t";
@@ -83,7 +83,7 @@ void main()
 
 #ifdef FIBONACCI_2
 	int n; int sum;
-	cout << "¬‚Â‰ËÚÂ ÍÓÎË˜ÂÒÚ‚Ó ˜ËÒÂÎ: "; cin >> n;
+	cout << "–í–≤–µ–¥–∏—Ç–µ –∫–æ–ª–∏—á–µ—Å—Ç–≤–æ —á–∏—Å–µ–ª: "; cin >> n;
 	for (int a = 0, b = 1, c = a + b; a < n; a = b, b = c, c = a + b)
 	{
 		if ()
@@ -98,11 +98,11 @@ void main()
 #ifdef SIMPLE
 
 	int n;
-	cout << "¬‚Â‰ËÚÂ ÔÂ‰ÂÎ¸ÌÓÂ ˜ËÒÎÓ: "; cin >> n;
+	cout << "–í–≤–µ–¥–∏—Ç–µ –ø—Ä–µ–¥–µ–ª—å–Ω–æ–µ —á–∏—Å–ª–æ: "; cin >> n;
 	for (int i = 2; i < n; i++)
 	{
-		bool simple = true; //ÔÂ‰ÔÓÎ‡„‡ÂÏ, ˜ÚÓ ˜ËÒÎÓ ÔÓÒÚÓÂ,
-		//ÌÓ ˝ÚÓ ÌÛÊÌÓ ÔÓ‚ÂËÚ¸:
+		bool simple = true; //–ø—Ä–µ–¥–ø–æ–ª–∞–≥–∞–µ–º, —á—Ç–æ —á–∏—Å–ª–æ –ø—Ä–æ—Å—Ç–æ–µ,
+		//–Ω–æ —ç—Ç–æ –Ω—É–∂–Ω–æ –ø—Ä–æ–≤–µ—Ä–∏—Ç—å:
 		for (int j = 2; j < i; j++)
 		{
 			if (i % j == 0)
